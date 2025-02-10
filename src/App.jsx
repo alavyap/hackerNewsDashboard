@@ -4,6 +4,12 @@ import { ThemeProvider } from "@/contexts/theme-context";
 
 import Layout from "@/routes/layout";
 import DashboardPage from "@/routes/dashboard/page";
+import UserInfo from "./routes/userInfo";
+import AskHNStories from "./routes/stories/askHNStories";
+import ShowHNStories from "./routes/stories/showHNStories";
+import BestStories from "./routes/stories/bestStories";
+import NewStories from "./routes/stories/newStories";
+import JobPosts from "./routes/jobPosts";
 
 function App() {
     const router = createBrowserRouter([
@@ -16,40 +22,29 @@ function App() {
                     element: <DashboardPage />,
                 },
                 {
-                    path: "analytics",
-                    element: <h1 className="title">Analytics</h1>,
+                    path: "jobPosts",
+                    element: <JobPosts />,
                 },
                 {
-                    path: "reports",
-                    element: <h1 className="title">Reports</h1>,
+                    path: "userInfo",
+                    element: <UserInfo />,
+                },
+
+                {
+                    path: "newStories",
+                    element: <NewStories />,
                 },
                 {
-                    path: "customers",
-                    element: <h1 className="title">Customers</h1>,
+                    path: "bestStories",
+                    element: <BestStories />,
                 },
                 {
-                    path: "new-customer",
-                    element: <h1 className="title">New Customer</h1>,
+                    path: "showHNStories",
+                    element: <ShowHNStories />,
                 },
                 {
-                    path: "verified-customers",
-                    element: <h1 className="title">Verified Customers</h1>,
-                },
-                {
-                    path: "products",
-                    element: <h1 className="title">Products</h1>,
-                },
-                {
-                    path: "new-product",
-                    element: <h1 className="title">New Product</h1>,
-                },
-                {
-                    path: "inventory",
-                    element: <h1 className="title">Inventory</h1>,
-                },
-                {
-                    path: "settings",
-                    element: <h1 className="title">Settings</h1>,
+                    path: "askHNStories",
+                    element: <AskHNStories />,
                 },
             ],
         },

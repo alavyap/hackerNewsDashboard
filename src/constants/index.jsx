@@ -1,4 +1,4 @@
-import { ChartColumn, Home, NotepadText, Package, PackagePlus, Settings, ShoppingBag, UserCheck, UserPlus, Users } from "lucide-react";
+import { Briefcase, Eye, Home, Plus, Settings, ShoppingBag, TrendingUp, User2Icon, Users } from "lucide-react";
 
 import ProfileImage from "@/assets/profile-image.jpg";
 import ProductImage from "@/assets/product-image.jpg";
@@ -13,64 +13,39 @@ export const navbarLinks = [
                 path: "/",
             },
             {
-                label: "Analytics",
-                icon: ChartColumn,
-                path: "/analytics",
+                label: "Job Posts",
+                icon: Briefcase,
+                path: "/jobPosts",
             },
             {
-                label: "Reports",
-                icon: NotepadText,
-                path: "/reports",
+                label: "User Info",
+                icon: User2Icon,
+                path: "/userInfo",
             },
         ],
     },
     {
-        title: "Customers",
+        title: "Stories",
         links: [
             {
-                label: "Customers",
+                label: "New Stories",
+                icon: Plus,
+                path: "/newStories",
+            },
+            {
+                label: "Best Stories",
+                icon: TrendingUp,
+                path: "/bestStories",
+            },
+            {
+                label: "Show HN Stories",
+                icon: Eye,
+                path: "/showHNStories",
+            },
+            {
+                label: "Ask HN Stories",
                 icon: Users,
-                path: "/customers",
-            },
-            {
-                label: "New customer",
-                icon: UserPlus,
-                path: "/new-customer",
-            },
-            {
-                label: "Verified customers",
-                icon: UserCheck,
-                path: "/verified-customers",
-            },
-        ],
-    },
-    {
-        title: "Products",
-        links: [
-            {
-                label: "Products",
-                icon: Package,
-                path: "/products",
-            },
-            {
-                label: "New product",
-                icon: PackagePlus,
-                path: "/new-product",
-            },
-            {
-                label: "Inventory",
-                icon: ShoppingBag,
-                path: "/inventory",
-            },
-        ],
-    },
-    {
-        title: "Settings",
-        links: [
-            {
-                label: "Settings",
-                icon: Settings,
-                path: "/settings",
+                path: "/askHNStories",
             },
         ],
     },
