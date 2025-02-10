@@ -22,7 +22,7 @@ const UserInfo = () => {
     return (
         <div className="mx-auto mt-10 max-w-lg">
             {/* Search Bar */}
-            <div className="flex items-center space-x-2 rounded-lg bg-gray-100 p-3">
+            <div className="flex items-center space-x-2 rounded-lg bg-gray-200 p-3">
                 <input
                     type="text"
                     placeholder="Search Hacker News Username..."

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { getJobPosts } from "./apiCall";
-
 const JobPosts = () => {
     const [jobPosts, setJobPosts] = useState([]);
     const [page, setPage] = useState(1);
